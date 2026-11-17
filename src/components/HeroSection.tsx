@@ -2,14 +2,15 @@ import Link from "next/link";
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { cn } from "@/utils/cn";
+import { Button } from "./ui/moving-border";
 
 export const HeroSection = () => {
   return (
     <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
-        <Spotlight
-          className="-top-40 left-0 md:-top-20 md:left-60"
-          fill="white"
-        />
+      <Spotlight
+        className="-top-40 left-0 md:-top-20 md:left-60"
+        fill="white"
+      />
       <div className="p-4 relative z-10 w-full text-center ">
         <h1 className="text-white mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text bg-linear-to-b from-neutral-50 to-neutral-400">
           Master the art of music
@@ -20,7 +21,14 @@ export const HeroSection = () => {
           skills, join us to unlock your true potential.
         </p>
         <div className="mt-4">
-          <Link href="/courses">Explore Courses</Link>
+          <Link href="/courses">
+            <Button
+              borderRadius="1.75rem"
+              className="bg-black dark:bg-slate-900 text-white dark:text-white dark:border-slate-800"
+            >
+              Explore Courses
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
