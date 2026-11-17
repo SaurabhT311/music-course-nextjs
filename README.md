@@ -20,6 +20,15 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## UI Components
+
+This project uses [Aceternity UI](https://ui.aceternity.com/) for animated and styled React/Next.js UI components built on Tailwind CSS and Framer Motion / Motion.
+
+Unlike traditional packages imported solely from `node_modules`, Aceternity UI components live directly as source code in this repository:
+- You can inspect, customize, and refactor component implementations and animations directly in the codebase.
+- If you move or rename a component file, update its internal imports (such as utility helpers like `cn` or sub-components) and keep path aliases in `tsconfig.json` aligned.
+- See the [Aceternity UI Documentation](https://ui.aceternity.com/docs) for component props, examples, and dependencies.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
